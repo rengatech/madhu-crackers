@@ -90,15 +90,23 @@ h6 {
 }
 
 #header .logo {
-  font-size: 30px;
+
+  font-size: 23px;
   margin: 0;
   padding: 0;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 
+
 #header .logo a {
-  color: #111111;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient( #e90e12 ,#e2cd0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+ 
 }
 
 #header .logo a span {
@@ -283,7 +291,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: #e03a3c;
   transition: 0.3s;
   z-index: 999;
 }
@@ -365,7 +373,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.png") top center no-repeat;
+  background: url("../img/hero-bg.jpeg") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 82px;
@@ -440,7 +448,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 112px 0;
   overflow: hidden;
   position: relative;
 }
@@ -496,9 +504,9 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #2b2b2b;
+  background: #ed3c0d;
   min-height: 40px;
-  margin-top: 82px;
+  margin-top: 115px;
   color: #fff;
 }
 
@@ -517,7 +525,7 @@ section {
 }
 
 .breadcrumbs ol a {
-  color: #aaaaaa;
+  color: #fff;
 }
 
 .breadcrumbs ol a:hover {
@@ -1981,7 +1989,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #1b1b1b;
+  background: #e03a3c;
 }
 
 #footer .footer-top .footer-contact {
@@ -2051,7 +2059,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #aaaaaa;
+  color: #fff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -2133,3 +2141,206 @@ section {
   color: #fff;
   text-decoration: none;
 }
+.aboutimg{
+  display: flex;
+  justify-content: center;
+}
+#hero1 {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/ABOUT.jpeg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 82px;
+}
+
+#hero1:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero1 h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+#hero1 .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: #e03a3c;
+  border: 2px solid #e03a3c;
+}
+
+#hero1 .btn-get-started:hover {
+  background: transparent;
+  border-color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero1 {
+    text-align: center;
+    padding-top: 58px;
+  }
+
+  #hero1 h1 {
+    font-size: 28px;
+  }
+
+  #hero1 h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-height: 500px) {
+  #hero1 {
+    height: 120vh;
+  }
+}
+
+/*--------------------------------------------------------------
+*/
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background: #e03a3c;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+.panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  max-width:90%;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+  margin-top: 11px;
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #e03a3c;
+}
+.tabs{
+  gap: 11px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.crakersimg{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.details{
+  margin-top: 45px;
+    margin-bottom: 1rem;
+}
+.crakers{
+  display: flex;
+  
+}
+@media (max-width: 500px) {
+  .crakers{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.list{
+    padding-top: 111px;
+}
+@media (min-width:500px){
+  .whatsapp{
+    width: 5%;position: absolute;top: 578px;left: 10px;border-radius: 50%;
+    }
+  }
+  
+  @media (max-width:500px){
+    .whatsapp{
+      width: 12%;position: absolute;top: 529px;left: 0;border-radius: 50%;
+    }
+    }
+    @media (min-width:500px){
+      .booknow{
+        position: absolute;top: 578px;right: 0;
+        width: 16%;
+        height: 64px;
+        
+        }
+      }
+      
+      @media (max-width:500px){
+        .booknow{
+          position: absolute;top: 529px;right: 0;
+          width: 42%;
+        height: 49px;
+        }
+      }
+    /* Blink for Webkit and others
+    (Chrome, Safari, Firefox, IE, ...)
+    */
+    
+    @-webkit-keyframes blinker {
+      from {opacity: 1.0;}
+      to {opacity: 0.0;}
+    }
+    .blink{
+      text-decoration: blink;
+      -webkit-animation-name: blinker;
+      -webkit-animation-duration: 0.8s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:ease-in-out;
+      -webkit-animation-direction: alternate;
+    }
