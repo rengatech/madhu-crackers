@@ -2344,3 +2344,117 @@ section {
       -webkit-animation-timing-function:ease-in-out;
       -webkit-animation-direction: alternate;
     }
+
+
+    .violet{
+      background-color: #FF0000;
+      height: 80px;
+  }
+
+  
+  @media screen and (max-width: 500px){
+      .fss-4{
+          font-size: .75rem !important;
+      }
+    }
+  @media screen and (max-width: 500px){
+      .fss-5{
+          font-size: .75rem !important;
+      }
+    }
+  @media screen and (max-width: 500px){
+      .hh4{
+          font-size: .86rem !important;
+      }
+    }
+  @media screen and (max-width: 500px){
+      .hh5{
+          font-size: .86rem !important;
+      }
+    }
+  .container-fact {
+      display: inline-block;
+      cursor: pointer;
+    }
+    .bar-1{
+      width: 12px;
+      height: 2px;
+      background-color: #fff;
+      transform: translate(0, 11px) rotate(-90deg);
+      transition: 0.4s;
+    }
+    .bar-2{
+      width: 12px;
+      height: 2px;
+      background-color: #fff;
+       margin: 9px 0px;
+      transition: 0.4s;
+    }
+    .change .bar-1 {
+      transform: translate(0, 11px) rotate(-0deg);
+    }
+    .change .bar-2 {opacity: 0;}
+  .yellow{
+      background-color: #FF0000 ;
+      height: 80px;
+      color: #fff ;
+  }
+  .form-group {
+      margin-bottom: 1rem;
+  }
+  .minimum_order_amount_cover {
+      color: red;
+      font-weight: bold;
+  }
+  .Order {
+      position: sticky;
+      top: -1px;
+      background-color:#281a3bcf ;
+      font-size: 24px;
+      height: 80px;
+      z-index: 1;
+  }
+  .strike {
+      text-decoration-color: #FF0000 !important;
+      text-decoration-thickness: 2px !important;
+      text-decoration: line-through;
+  }
+  @media screen and (max-width:760px)
+  {
+    .wrapper{
+      flex-direction: column;
+    }
+  } 
+  .socialmedia{
+    background-color: #FF0000;
+    z-index: 999;
+  }
+  .purchase-info{
+    margin: 1.5rem 0;
+  }
+  .purchase-info input,
+  .purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  .purchase-info input{
+    width: 60px;
+  }
+  .purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+  }
+  .purchase-info .btn:first-of-type{
+    background: #256EFF;
+  }
+  .purchase-info .btn:last-of-type{
+    background: #F64749;
+  }
+  .purchase-info .btn:hover{
+    opacity: 0.9;
+  }

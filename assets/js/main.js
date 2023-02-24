@@ -295,3 +295,7 @@
   new PureCounter();
 
 })()
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
