@@ -2458,3 +2458,13 @@ section {
   .purchase-info .btn:hover{
     opacity: 0.9;
   }
+ 
+    @media (min-width:500px){
+      .description{
+       padding-left: 111px;padding-right: 118px;}
+      }
+      
+      @media (max-width:500px){
+        .description{
+         padding-left: 10px;padding-right: 10px;}
+      }
