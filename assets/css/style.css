@@ -487,6 +487,7 @@ section {
 .section-bg {
   padding: 120px 0;
   color: #fff;
+  margin-top: -243px;
 }
 
 .section-bg:before {
@@ -651,6 +652,7 @@ section {
 @media (max-width: 768px) {
   .about {
     text-align: center;
+    margin-top: -182px;
   }
 }
 
@@ -2232,7 +2234,7 @@ section {
 }
 .panels{
   background:#fffffff6;
-  box-shadow: 0 2rem 2rem #00000080;
+  box-shadow: 0 0rem 0.5rem #000;
   min-height:200px;
   width:100%;
   max-width:90%;
@@ -2279,6 +2281,7 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 .crakersimg{
   width: 200px;
@@ -2297,6 +2300,7 @@ section {
   .crakers{
     display: flex;
     flex-wrap: wrap;
+    border-bottom: dashed 1px #6c757d;
   }
 }
 .list{
@@ -2325,6 +2329,7 @@ section {
       background-color: #e03a3c;
       height: 30px;
       color: #fff;
+      margin-top: 11px;
   }
 
   
@@ -2507,4 +2512,50 @@ section {
     /* display: flex; */
       cursor: pointer;
   }
+}
+.logo1{
+  width: 240px;
+}
+@media (max-width:400px){
+  .logo1{
+   width: 205px;
+  }
+}
+.addbtn{
+  width: 180px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-top: -24px;
+    margin-left: -13px;
+}
+.addbtn button {
+  border-radius: 7px;
+  background-color: #e03a3c;
+  border: none;
+  padding: 10px 18px;
+  font-size: 0.8rem;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 2px 5px rgb(145, 145, 145);
+  width: 113px;
+}
+.minusBtn, .plusBtn{
+display: none;
+font-size: 3rem;
+font-weight: 700;
+
+}
+.cards{
+  border-bottom: dashed 1px #6c757d;
+}
+#imageGallery{
+  border: solid 1px #6c757d;
+    border-radius: 14px;
+    height: 164px;
+}
+.carousel{
+  z-index: 2;
 }

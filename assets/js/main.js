@@ -294,8 +294,45 @@
    */
   new PureCounter();
 
-})()
+})();
 
 // function myFunction(x) {
 //   x.classList.toggle("change");
 // }
+
+let addbtn = document.querySelector('.mainBtn');
+let mbtn = document.querySelector('.minusBtn');
+let pbtn = document.querySelector('.plusBtn'); 
+
+addbtn.addEventListener("click",()=>{
+  if(addbtn.innerText == 'ADD'){
+      addbtn.innerText = 1;
+      pbtn.style.display = 'inline-block';
+      mbtn.style.display = 'inline-block';
+  }
+
+  })
+
+  mbtn.addEventListener("click",()=>{
+    if(addbtn.innerText == 10){
+    pbtn.style.display = 'inline-block';
+    }
+  
+    if(addbtn.innerText < 2){ 
+      addbtn.innerText = 'ADD';
+      pbtn.style.display = 'none';
+      mbtn.style.display = 'none';
+    }
+    else{
+      addbtn.innerText = addbtn.innerText - 1;
+    }
+  
+    })
+    pbtn.addEventListener("click",()=>{
+      addbtn.innerText = + (addbtn.innerText) + + 1;
+    
+      if(addbtn.innerText == 10){ 
+       pbtn.style.display ='none';
+      }
+    
+      })
