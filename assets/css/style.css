@@ -141,7 +141,7 @@ h6 {
 
 @media (max-width: 992px) {
   .get-started-btn {
-    margin: 3px 5px 0 0;
+    margin: 3px 5px 0 5px;
     padding: 6px 8px;
   }
 }
@@ -2340,7 +2340,7 @@ section {
     }
   @media screen and (max-width: 500px){
       .fss-5{
-          font-size: 17px !important;
+          font-size: 14px !important;
       }
     }
   @media screen and (max-width: 500px){
@@ -2390,7 +2390,7 @@ section {
   .Order {
       position: fixed;
       width: 100%;
-      top: 102px;
+      top: 0px;
       background-color:#281a3bcf;
       font-size: 18px;
       height: 30px;
@@ -2511,6 +2511,7 @@ section {
     display: inline-block;
     /* display: flex; */
       cursor: pointer;
+      margin-top: -22px;
   }
 }
 .logo1{
@@ -2522,13 +2523,13 @@ section {
   }
 }
 .addbtn{
-  width: 180px;
-  height: 40px;
+  width: 94px;
+  height: 30px;
   position: relative;
   display: flex;
   justify-content: end;
   margin-top: -24px;
-    margin-left: -13px;
+    margin-left: 13px;
 }
 .addbtn button {
   border-radius: 7px;
@@ -2550,12 +2551,55 @@ font-weight: 700;
 }
 .cards{
   border-bottom: dashed 1px #6c757d;
+  margin-top: 2px;
 }
 #imageGallery{
   border: solid 1px #6c757d;
     border-radius: 14px;
-    height: 164px;
+    height: 89px;
 }
 .carousel{
   z-index: 2;
+}
+.site-icon{
+  display: flex;
+}
+.section1 {
+  padding: 0px 0;
+  overflow: hidden;
+  position: relative;
+}
+.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: none;
+}
+.marqee{
+  font-weight: bolder;
+    color: #e03a3c;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+.faq-section .mb-0 > a {
+  display: block;
+  position: relative;
+}
+
+.faq-section .mb-0 > a:after {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  right: 0;
+  font-weight: 600;
+}
+
+.faq-section .mb-0 > a[aria-expanded="true"]:after {
+  content: "\f068";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
 }
