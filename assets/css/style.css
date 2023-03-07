@@ -1,9 +1,4 @@
-/**
-* Template Name: Presento - v3.10.0
-* Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -2256,6 +2251,7 @@ section {
     }
 }
 .panel-title{
+  font-family: "Raleway", sans-serif;
   font-size:1.5em;
   font-weight:bold
 }
@@ -2277,6 +2273,7 @@ section {
   border-top: 3px solid #e03a3c;
 }
 .tabs{
+  font-family: "Raleway", sans-serif;
   gap: 11px;
     display: flex;
     justify-content: center;
@@ -2289,6 +2286,7 @@ section {
   justify-content: center;
 }
 .details{
+  font-family: "Raleway", sans-serif;
   margin-top: 45px;
     margin-bottom: 1rem;
 }
@@ -2582,24 +2580,253 @@ font-weight: 700;
     color: #e03a3c;
     font-family: "Raleway", sans-serif;
 }
-
-
-
-.faq-section .mb-0 > a {
-  display: block;
+.accordion{
+  max-width: 1000px;
+}
+.accordion .contentBx{
   position: relative;
+  margin: 10px 20px ;
 }
-
-.faq-section .mb-0 > a:after {
-  content: "\f067";
-  font-family: "Font Awesome 5 Free";
+.accordion .contentBx .label{
+position: relative;
+padding: 10px;
+background: #e03a3c;
+color: white;
+cursor: pointer;
+}
+.accordion .contentBx .label::before{
+  content: '+';
   position: absolute;
-  right: 0;
-  font-weight: 600;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
 }
 
-.faq-section .mb-0 > a[aria-expanded="true"]:after {
-  content: "\f068";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
+.accordion .contentBx.active .label::before{
+  content: '- ';
+  font-size: 2.5em;
+  font-weight: 400;
+}
+.accordion .contentBx .contant1{
+  position: relative;
+  background-color: white;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion .contentBx.active .contant1{
+  height: auto;
+  padding: 10px;
+}
+
+/* FAQ container */
+
+.dl-faq {
+  position: relative;
+  /* max-width: 36rem; */
+  margin: 0rem auto 3rem;
+}
+
+.dl-faq > dt {
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding: 1rem;
+
+  /* Fix for IE9 & 10 */
+  border-top: 1px solid rgba(255,255,255,.2);
+}
+
+dt > button {
+  color: inherit;
+  background-color: inherit;
+}
+.dl-faq > dt:first-child .pab-btn,
+.dl-faq > dt:first-child {
+  border-top: 0;
+  display: flex;
+    justify-content: center;
+}
+
+.dl-faq.pab_container > dt {
+  /* added via JS */
+  margin-bottom: 6px;
+  padding: 0;
+  background: #e03a3c;
+  color: white;
+}
+
+.dl-faq > dd {
+  margin: 0 auto;
+  padding: 0 1.5em;
+  font-weight:100;
+}
+
+.dl-faq > dd > div {
+  padding: 0 0 0.4rem;
+}
+
+.dl-faq div > p {
+  margin: 0 0 1rem;
+}
+
+.dl-faq div >:last-child {
+  /* margin: 0; */
+}
+
+
+/* The acivating buttons added via JS */
+
+.pab-btn {
+  position: relative;
+  cursor: pointer;
+  transition: color 1.0s ease-in;
+
+  /* Using absolute positioning for SVG so reserve some space */
+  padding: 0.1rem 2.5rem 0.2rem .5rem;
+  border: 0 solid transparent;
+  border-top: 0px solid rgba(0,0,0,.75);
+
+  /* inherit doesn't work in IE */
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.pab-btn:hover,
+.pab-btn:focus,
+.pab-btn:active {
+  /* color:#ec0606;
+  background-color: rgb(245, 229, 9); */
+}
+
+.pab-btn:focus {
+  outline: 0 solid;
+}
+
+.pab-btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin-top: -2px;
+  margin-bottom: -2px;
+}
+
+
+/* Underline text on button hover (Tesco requirement) */
+
+.pab-btn > span {
+  position: relative;
+  /* Removes button drepression in IE */
+  pointer-events: none;
+  /* Required by Safari */
+  /* border-bottom: 1px solid transparent; */
+  transition: border-color .3s;
+}
+
+.pab-btn:hover > span,
+.pab-btn:focus > span {
+  border-bottom-color: rgba(255,255,255,.5);
+}
+
+.pab-btn:active > span {
+  border-bottom-color: transparent;
+}
+
+
+/* SVG plus */
+
+.pab-svg-plus {
+  /* Tesco requirement
+  border: 2px solid currentColor; */
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  top: calc(50% - .75em);
+  right: 4px;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0;
+  pointer-events: none;
+  stroke-width: 4;
+  stroke-linecap: square;
+  stroke: currentColor;
+  -webkit-transition: transform .7s ease-out, box-shadow .3s ease-out;
+  transition: transform .7s ease-out, box-shadow .3s ease-out;
+}
+
+.pab-btn:hover .pab-svg-plus,
+.pab-btn:focus .pab-svg-plus {
+  /* Same colour as text but with .4 alpha */
+  /* Tesco requirement
+  box-shadow: 0 0 0 4px rgba(0, 83, 159, 0.4);*/
+}
+
+.pab-btn:active .pab-svg-plus {
+  /* Tesco requirement
+  box-shadow: 0 0 0 4px rgba(0, 83, 159, 0);*/
+}
+
+[aria-expanded="true"] > .pab-svg-plus {
+  transform: rotateZ(360deg);
+}
+
+.use-plus {
+  /* used to animate plus into minus */
+  -webkit-transition: stroke .5s ease-out, opacity .7s ease-out;
+  transition: stroke .5s ease-out, opacity .7s ease-out;
+}
+
+[aria-expanded=true] .use-plus {
+  opacity: 0;
+}
+
+.isSafari .pab-btn .pab-svg-plus {
+  box-shadow: none;
+}
+
+
+/* Open / close animation - The inaccurate CSS max-height is resolved via JS adding an inline style */
+
+[data-pab] + [aria-hidden] {
+  overflow: hidden;
+  opacity: 1;
+  max-height: 50rem;
+  visibility: visible;
+  transition: visibility 0s ease 0s, max-height .65s ease-out 0s, opacity .65s ease-in 0s;
+}
+
+[data-pab] + [aria-hidden="true"] {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: .66s, 0s, 0s;
+}
+
+
+/* Overide the max-height set as an inline style by the JS */
+
+[data-pab] + [style][aria-hidden="true"] {
+  max-height: 0 !important;
+}
+#pab_2{
+  display: flex;
+  justify-content: center;
+}
+#pab_3{
+  display: flex;
+  justify-content: center;
+}
+#pab_4{
+  display: flex;
+  justify-content: center;
+}
+#pab_5{
+  display: flex;
+  justify-content: center;
+}
+#pab_6{
+  display: flex;
+  justify-content: center;
 }
