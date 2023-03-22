@@ -307,37 +307,6 @@
 //     });
 // })
 
-$('.hidebtn').click(function () {
- $('.total-card').hide();
-
- });
- $(".openbtn").click(function(){
-  $(".total-card").show();
-});
-$('.hidebtn1').click(function () {
-  $('.total-card1').hide();
- 
-  });
-  $(".openbtn1").click(function(){
-   $(".total-card1").show();
-   
- });
- $('.hidebtn2').click(function () {
-  $('.total-card2').hide();
- 
-  });
-  $(".openbtn2").click(function(){
-   $(".total-card2").show();
-   
- });
- $('.hidebtn3').click(function () {
-  $('.total-card3').hide();
- 
-  });
-  $(".openbtn3").click(function(){
-   $(".total-card3").show();
-   
- });
  ////add button
  
 $('.mainBtn').click(function(){
@@ -373,7 +342,7 @@ if (element !== null) {
   var position = target.position()
   window.addEventListener('scroll', function () {
     var height = $(window).scrollTop()
-    if (height > position.top) {
+    if (height > position.top ) {
       target.css('visibility', 'hidden')
       affix.css('display', 'block')
     } else {
@@ -734,3 +703,4 @@ var Pab = (function (window, document, debounce) {
 //   </div>`;
 //   Pab.add(document.querySelector('[data-pab=faq_7]'));
 // }, 2000);
+

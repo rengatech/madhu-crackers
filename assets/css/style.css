@@ -35,7 +35,7 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 75px;
   z-index: 996;
   background: #e03a3c;
   width: 40px;
@@ -456,7 +456,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -2388,13 +2388,24 @@ section {
   .Order {
       position: fixed;
       width: 100%;
-      top: 0px;
+      bottom: 0px;
       background-color:#281a3bcf;
       font-size: 18px;
       height: 30px;
       z-index: 1;
       color: #f3f36d;
   }
+  .Order1 {
+    /* position: fixed; */
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color:#281a3bcf;
+    font-size: 18px;
+    height: 30px;
+    z-index: 1;
+    color: #f3f36d;
+}
   .strike {
       text-decoration-color: #e03a3c !important;
       text-decoration-thickness: 2px !important;
@@ -2451,14 +2462,22 @@ section {
       }
       @media (min-height:900px){
         .whatsapp{
-          width: 10%;position: absolute;top: 800px;left: 10px;border-radius: 50%;
+          width: 7%;position: absolute;top: 800px;left: 10px;border-radius: 50%;
           }
         }
         @media (min-height:900px){
           .booknow{
             position: absolute;top: 800px;right: 0;
             width: 26%;
-          height: 49px;
+         
+          }
+        }
+        @media (min-height:600px){
+          .booknow1{
+            position: absolute;
+            top: 809px;
+            left: 3px;
+            width: 7%;
           }
         }
         @media (max-height:900px){
@@ -2470,7 +2489,7 @@ section {
             .booknow{
               position: absolute;top: 830px;right: 0;
               width: 35%;
-            height: 49px;
+           
             }
           }
         @media (max-width:400px){
@@ -2482,7 +2501,7 @@ section {
             .booknow{
               position: absolute;top: 615px;right: 0;
               width: 42%;
-            height: 49px;
+            
             }
           }
         
@@ -2493,9 +2512,9 @@ section {
             }
             @media (min-width:1000px){
               .booknow{
-                position: absolute;top: 878px;right: 0;
-                width: 10%;
-              height: 49px;
+                position: absolute;top: 859px;right: 0;
+                width: 3.4%;
+             
               }
             }
 .container-product{
@@ -2572,7 +2591,7 @@ font-weight: 700;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 998;
   display: none;
 }
 .marqee{
@@ -2829,4 +2848,24 @@ dt > button {
 #pab_6{
   display: flex;
   justify-content: center;
+}
+@media (max-width:400px){
+  .booknow1{
+    width: 14%;
+    position: absolute;
+    top: 553px;
+    left: 6px;
+  }
+}
+@media (min-width:1000px){
+  .booknow1{
+    position: absolute;top: 790px;right: 0;
+    width: 4%;
+ 
+  }
+}
+.section2 {
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
 }
